@@ -1,177 +1,200 @@
-:root {    /* Gruvbox-dark-soft by Chris Kempson (http://chriskempson.com) */
+:root {
+  /* Gruvbox-dark-soft by Chris Kempson (http://chriskempson.com) */
 
-    --background1: #32302f;
-    --background2: #3c3836;
-    --background3: #504945;
-    --background4: #665c54;
-    --foreground1: #bdae93;
-    --foreground2: #d5c4a1;
-    --foreground3: #ebdbb2;
-    --foreground4: #fbf1c7;
-    --red: #ea6962;
-    --orange: #e78a4e;
-    --yellow: #d8a657;
-    --green: #a9b665;
-    --cyan: #89b482;
-    --blue: #7daea3;
-    --magenta: #d3869b;
-    --orange2: #f28534;
+  --background1: #32302f;
+  --background2: #3c3836;
+  --background3: #504945;
+  --background4: #665c54;
+  --foreground1: #bdae93;
+  --foreground2: #d5c4a1;
+  --foreground3: #ebdbb2;
+  --foreground4: #fbf1c7;
+  --red: #ea6962;
+  --orange: #e78a4e;
+  --yellow: #d8a657;
+  --green: #a9b665;
+  --cyan: #89b482;
+  --blue: #7daea3;
+  --magenta: #d3869b;
+  --orange2: #f28534;
 
-    --tridactyl-cmdl-font-family: 'MonoLisa';
+  --tridactyl-cmdl-font-family: "MonoLisa";
 
-    --tridactyl-fg: var(--foreground2);
-    --tridactyl-bg: var(--background1);
-    --tridactyl-url-fg: var(--red);
-    --tridactyl-url-bg: var(--background1);
-    --tridactyl-highlight-box-bg: var(--green);
-    --tridactyl-highlight-box-fg: var(--background1);
+  --tridactyl-fg: var(--foreground2);
+  --tridactyl-bg: var(--background1);
+  --tridactyl-url-fg: var(--red);
+  --tridactyl-url-bg: var(--background1);
+  --tridactyl-highlight-box-bg: var(--green);
+  --tridactyl-highlight-box-fg: var(--background1);
 
-    /* Hint character tags */
-    --tridactyl-hintspan-fg: var(--background1) !important;
-    --tridactyl-hintspan-bg: var(--yellow) !important;
+  /* Hint character tags */
+  --tridactyl-hintspan-fg: var(--background1) !important;
+  --tridactyl-hintspan-bg: var(--yellow) !important;
 
-    /* Element Highlights */
-    --tridactyl-hint-active-fg: none;
-    --tridactyl-hint-active-bg: none;
-    --tridactyl-hint-active-outline: none;
-    --tridactyl-hint-bg: none;
-    --tridactyl-hint-outline: none;
-    
-    --border-radius-1: 4px;
-    --border-radius-2: 6px;
-    --border-radius-3: 8px;
+  /* Element Highlights */
+  --tridactyl-hint-active-fg: none;
+  --tridactyl-hint-active-bg: none;
+  --tridactyl-hint-active-outline: none;
+  --tridactyl-hint-bg: none;
+  --tridactyl-hint-outline: none;
 
-    --space-1: 4px;
-    --space-2: 8px;
-    --space-3: 12px;
-    
-    --shadow-1: rgba(0, 0, 0, 0.07) 0px 0.4px 0.5px 0px, rgba(0, 0, 0, 0.07) 0px 1.2px 1.3px -0.8px, rgba(0, 0, 0, 0.07) 0px 2.9px 3.3px -1.7px, rgba(0, 0, 0, 0.07) 0.1px 6.9px 7.8px -2.5px, rgba(0, 0, 0, 0.1) 0px 0px 7.8px -2.5px;
-    --shadow-2: rgba(0, 0, 0, 0.05) 0px 0.4px 0.5px 0px, rgba(0, 0, 0, 0.05) 0px 1.8px 2px -0.4px, rgba(0, 0, 0, 0.05) 0px 3.3px 3.7px -0.7px, rgba(0, 0, 0, 0.05) 0.1px 5.3px 6px -1.1px, rgba(0, 0, 0, 0.05) 0.1px 8.4px 9.5px -1.4px, rgba(0, 0, 0, 0.05) 0.1px 13.1px 14.7px -1.8px, rgba(0, 0, 0, 0.05) 0.2px 19.9px 22.4px -2.1px, rgba(0, 0, 0, 0.05) 0.3px 29.3px 33px -2.5px, rgba(0, 0, 0, 0.075) 0px 0px 9.5px -1.4px;
+  --border-radius-1: 4px;
+  --border-radius-2: 6px;
+  --border-radius-3: 8px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+
+  --shadow-1: rgba(0, 0, 0, 0.07) 0px 0.4px 0.5px 0px,
+    rgba(0, 0, 0, 0.07) 0px 1.2px 1.3px -0.8px,
+    rgba(0, 0, 0, 0.07) 0px 2.9px 3.3px -1.7px,
+    rgba(0, 0, 0, 0.07) 0.1px 6.9px 7.8px -2.5px,
+    rgba(0, 0, 0, 0.1) 0px 0px 7.8px -2.5px;
+  --shadow-2: rgba(0, 0, 0, 0.05) 0px 0.4px 0.5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1.8px 2px -0.4px,
+    rgba(0, 0, 0, 0.05) 0px 3.3px 3.7px -0.7px,
+    rgba(0, 0, 0, 0.05) 0.1px 5.3px 6px -1.1px,
+    rgba(0, 0, 0, 0.05) 0.1px 8.4px 9.5px -1.4px,
+    rgba(0, 0, 0, 0.05) 0.1px 13.1px 14.7px -1.8px,
+    rgba(0, 0, 0, 0.05) 0.2px 19.9px 22.4px -2.1px,
+    rgba(0, 0, 0, 0.05) 0.3px 29.3px 33px -2.5px,
+    rgba(0, 0, 0, 0.075) 0px 0px 9.5px -1.4px;
 }
 
-#command-line-holder {    
-    opacity: 0.9;
-    order: 1;
-    border: 2px solid var(--orange);
-    border-radius: var(--border-radius-3);
-    color: var(--tridactyl-bg);
-    box-shadow: var(--shadow-1);
+#command-line-holder {
+  opacity: 0.9;
+  order: 1;
+  border: 2px solid var(--orange);
+  border-radius: var(--border-radius-3);
+  color: var(--tridactyl-bg);
+  box-shadow: var(--shadow-1);
 }
 
-#tridactyl-input {    
-    padding: 1rem;
-    color: var(--tridactyl-fg);
-    width: 90%;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    padding-left: unset;
-    padding: 1rem;
+#tridactyl-input {
+  padding: 1rem;
+  color: var(--tridactyl-fg);
+  width: 90%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-left: unset;
+  padding: 1rem;
 }
 
-#completions table {   
-    font-size: 0.8rem;
-    font-weight: 200;
-    border-spacing: 0;
-    table-layout: fixed;
-    padding: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+#completions table {
+  font-size: 0.8rem;
+  font-weight: 200;
+  border-spacing: 0;
+  table-layout: fixed;
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-#completions > div {    
-    max-height: calc(20 * var(--option-height));
-    min-height: calc(10 * var(--option-height));
+#completions > div {
+  max-height: calc(20 * var(--option-height));
+  min-height: calc(10 * var(--option-height));
 }
 
 /* COMPLETIONS */
 
-#completions {    --option-height: 1.4em;
-    color: var(--tridactyl-fg);
-    box-shadow: var(--shadow-1);
-    background: var(--tridactyl-bg);
-    border-radius: var(--border-radius-3);
-    margin-top: var(--space-2);
-    display: inline-block;
-    font-size: unset;
-    font-weight: 200;
-    overflow: hidden;
-    width: 100%;
-    border-top: unset;
-    order: 2;
+#completions {
+  --option-height: 1.4em;
+  color: var(--tridactyl-fg);
+  box-shadow: var(--shadow-1);
+  background: var(--tridactyl-bg);
+  border-radius: var(--border-radius-3);
+  margin-top: var(--space-2);
+  display: inline-block;
+  font-size: unset;
+  font-weight: 200;
+  overflow: hidden;
+  width: 100%;
+  border-top: unset;
+  order: 2;
 }
 
 /* Olie doesn't know how CSS inheritance works */
-#completions .HistoryCompletionSource {    max-height: unset;
-    min-height: unset;
+#completions .HistoryCompletionSource {
+  max-height: unset;
+  min-height: unset;
 }
 
-    #completions
-    .HistoryCompletionSource
-    table {
-    width: 100%;
-    font-size: 9pt;
-    border-spacing: 0;
-    table-layout: fixed;
+#completions .HistoryCompletionSource table {
+  width: 100%;
+  font-size: 9pt;
+  border-spacing: 0;
+  table-layout: fixed;
 }
 
 /* redundancy 2: redundancy 2: more redundancy */
-#completions .BmarkCompletionSource {    max-height: unset;
-    min-height: unset;
+#completions .BmarkCompletionSource {
+  max-height: unset;
+  min-height: unset;
 }
 
-#completions table tr td.prefix,#completions table tr td.privatewindow,#completions table tr td.container,#completions table tr td.icon {    display: none;
+#completions table tr td.prefix,
+#completions table tr td.privatewindow,
+#completions table tr td.container,
+#completions table tr td.icon {
+  display: none;
 }
 
-    #completions
-    .BufferCompletionSource
-    table {
-    width: unset;
-    font-size: unset;
-    border-spacing: unset;
-    table-layout: unset;
+#completions .BufferCompletionSource table {
+  width: unset;
+  font-size: unset;
+  border-spacing: unset;
+  table-layout: unset;
 }
 
-#completions table tr .title {    width: 50%;
+#completions table tr .title {
+  width: 50%;
 }
 
-#completions table tr {    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+#completions table tr {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#completions .sectionHeader {    background: unset;
-    font-weight: 200;
-    border-bottom: unset;
-    padding: 1rem !important;
-    padding-left: unset;
-    padding-bottom: 0.2rem;
+#completions .sectionHeader {
+  background: unset;
+  font-weight: 200;
+  border-bottom: unset;
+  padding: 1rem !important;
+  padding-left: unset;
+  padding-bottom: 0.2rem;
 }
 
-#cmdline_iframe {    position: fixed !important;
-    bottom: unset;
-    top: 25% !important;
-    left: 10% !important;
-    z-index: 2147483647 !important;
-    width: 80% !important;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px !important;
+#cmdline_iframe {
+  position: fixed !important;
+  bottom: unset;
+  top: 25% !important;
+  left: 10% !important;
+  z-index: 2147483647 !important;
+  width: 80% !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px !important;
 }
 
-.TridactylStatusIndicator {    position: fixed !important;
-    bottom: 0 !important;
-    background: var(--tridactyl-bg) !important;
-    border: unset !important;
-    border: 1px var(--green) solid !important;
-    font-size: 12pt !important;
-    /*font-weight: 200 !important;*/
-    padding: 0.8ex !important;
+.TridactylStatusIndicator {
+  position: fixed !important;
+  bottom: 0 !important;
+  background: var(--tridactyl-bg) !important;
+  border: unset !important;
+  border: 1px var(--green) solid !important;
+  font-size: 12pt !important;
+  /*font-weight: 200 !important;*/
+  padding: 0.8ex !important;
 }
 
-#completions .focused {    background: var(--green);
-    color: var(--background1);
+#completions .focused {
+  background: var(--green);
+  color: var(--background1);
 }
 
-#completions .focused .url {    background: var(--green);
-    color: var(--background1);
+#completions .focused .url {
+  background: var(--green);
+  color: var(--background1);
 }
 /* #Ocean-normal { */
 /*  border-color: green !important; */
