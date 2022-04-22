@@ -1,7 +1,7 @@
 /* stylelint-disable selector-class-pattern */
 
 :root {
-  /* Gruvbox-dark-soft by Chris Kempson (http://chriskempson.com) */
+  /* Originally based on: gruvbox-dark-soft by Chris Kempson (http://chriskempson.com) */
 
   --background1: #32302f;
   --background2: #3c3836;
@@ -61,26 +61,46 @@
     rgb(0 0 0 / 7.5%) 0 0 9.5px -1.4px;
 }
 
+body {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 5rem;
+}
+
 #command-line-holder {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
   order: 1;
-  border: 2px solid var(--orange);
-  border-radius: var(--border-radius-3);
+  border-radius: 0;
+  border-top-left-radius: var(--border-radius-3);
+  border-top-right-radius: var(--border-radius-3);
   box-shadow: var(--shadow-1);
   color: var(--tridactyl-bg);
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+#command-line-holder #tridactyl-colon {
+  padding-left: 0.75rem;
+  color: var(--foreground1);
+  font-size: 1.25rem;
+  opacity: 0.5;
 }
 
 #tridactyl-input {
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
-  padding-left: unset;
+  padding-left: 0.25rem;
   color: var(--tridactyl-fg);
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 #completions table {
-  padding: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-spacing: 0;
@@ -89,8 +109,12 @@
   table-layout: fixed;
 }
 
+#completions table td {
+  padding: 0.25rem 0.5rem;
+}
+
 #completions > div {
-  min-height: calc(10 * var(--option-height));
+  min-height: auto;
   max-height: calc(20 * var(--option-height));
 }
 
@@ -101,16 +125,23 @@
 
   display: inline-block;
   overflow: hidden;
-  width: 100%;
+  width: auto;
   order: 2;
+  padding-bottom: 0.5rem;
   border-top: unset;
-  margin-top: var(--space-2);
   background: var(--tridactyl-bg);
-  border-radius: var(--border-radius-3);
+  border-radius: 0;
+  border-bottom-left-radius: var(--border-radius-3);
+  border-bottom-right-radius: var(--border-radius-3);
   box-shadow: var(--shadow-1);
   color: var(--tridactyl-fg);
   font-size: unset;
   font-weight: 200;
+  opacity: 0.95;
+}
+
+#completions .optionContainer {
+  padding-top: 0;
 }
 
 /* Olie doesn't know how CSS inheritance works */
@@ -120,7 +151,7 @@
 }
 
 #completions .HistoryCompletionSource table {
-  width: 100%;
+  width: auto;
   border-spacing: 0;
   font-size: 9pt;
   table-layout: fixed;
@@ -157,10 +188,11 @@
 }
 
 #completions .sectionHeader {
-  padding: 1rem !important;
+  padding: 0.5rem !important;
   padding-bottom: 0.2rem;
   padding-left: unset;
   border-bottom: unset;
+  background: var(--background2);
   background: unset;
   font-weight: 200;
 }
@@ -173,7 +205,6 @@
   bottom: unset;
   left: 10% !important;
   width: 80% !important;
-  box-shadow: rgb(0 0 0 / 50%) 0 0 20px !important;
 }
 
 .TridactylStatusIndicator {
@@ -188,9 +219,28 @@
   font-size: 12pt !important;
 }
 
+#completions .documentation {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+}
+
+#completions .focused .excmd {
+  color: var(--magenta);
+}
+
 #completions .focused {
-  background: var(--green);
-  color: var(--background1);
+  background: var(--background3);
+  color: var(--foreground3);
 }
 
 #completions .focused .url {
