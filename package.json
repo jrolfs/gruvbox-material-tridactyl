@@ -7,7 +7,12 @@
   "author": "Jamie Rolfs <jamie.rolfs@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "format": "prettier --write *.css",
+    "lint": "stylelint *.css"
+  },
   "devDependencies": {
+    "prettier": "^2.6.2",
     "stylelint": "^14.7.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-standard": "^25.0.0"
