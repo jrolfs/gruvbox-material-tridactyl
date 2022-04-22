@@ -8,6 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "fix": "yarn fix:format && yarn fix:lint",
+    "fix:format": "yarn format",
+    "fix:lint": "yarn lint --fix",
     "format": "prettier --write *.css",
     "lint": "stylelint *.css"
   },
