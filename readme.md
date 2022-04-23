@@ -12,4 +12,5 @@
 
 ²You can find the Firefox theme used in the screenshot [here](https://addons.mozilla.org/en-US/firefox/addon/gruvbox-material-dark-soft/).
 
-³This was based originally off of [base16-tridactyl](https://github.com/bezmi/base16-tridactyl), credit goes to **[@bezmi](https://github.com/bezmi)** there — thank you!
+#### Credits
+This was based originally off of [base16-tridactyl](https://github.com/bezmi/base16-tridactyl), 🙏🏻 thanks **[@bezmi](https://github.com/bezmi)** 

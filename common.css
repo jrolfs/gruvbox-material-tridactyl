@@ -1,0 +1,9 @@
+:root {
+  --tridactyl-cmdl-font-family: "MonoLisa";
+  --tridactyl-fg: var(--foreground2);
+  --tridactyl-bg: var(--background1);
+  --tridactyl-url-fg: var(--red);
+  --tridactyl-url-bg: var(--background1);
+  --tridactyl-highlight-box-bg: var(--green);
+  --tridactyl-highlight-box-fg: var(--background1);
+}

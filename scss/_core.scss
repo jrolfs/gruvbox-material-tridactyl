@@ -1,67 +1,6 @@
-/* stylelint-disable selector-class-pattern */
-
-:root {
-  /* Originally based on: gruvbox-dark-soft by Chris Kempson (http://chriskempson.com) */
-
-  --background00: #1d2021;
-  --background0: #282828;
-  --background1: #32302f;
-  --background2: #3c3836;
-  --background3: #504945;
-  --background4: #665c54;
-  --foreground1: #bdae93;
-  --foreground2: #d5c4a1;
-  --foreground3: #ebdbb2;
-  --foreground4: #fbf1c7;
-  --red: #ea6962;
-  --orange: #e78a4e;
-  --yellow: #d8a657;
-  --green: #a9b665;
-  --cyan: #89b482;
-  --blue: #7daea3;
-  --magenta: #d3869b;
-  --orange2: #f28534;
-  --tridactyl-cmdl-font-family: "MonoLisa";
-  --tridactyl-fg: var(--foreground2);
-  --tridactyl-bg: var(--background1);
-  --tridactyl-url-fg: var(--red);
-  --tridactyl-url-bg: var(--background1);
-  --tridactyl-highlight-box-bg: var(--green);
-  --tridactyl-highlight-box-fg: var(--background1);
-
-  /* Hint character tags */
-  --tridactyl-hintspan-fg: var(--background1) !important;
-  --tridactyl-hintspan-bg: var(--yellow) !important;
-
-  /* Element Highlights */
-  --tridactyl-hint-active-fg: none;
-  --tridactyl-hint-active-bg: none;
-  --tridactyl-hint-active-outline: none;
-  --tridactyl-hint-bg: none;
-  --tridactyl-hint-outline: none;
-  --border-radius-1: 4px;
-  --border-radius-2: 6px;
-  --border-radius-3: 8px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --shadow-1:
-    rgb(0 0 0 / 7%) 0 0.4px 0.5px 0,
-    rgb(0 0 0 / 7%) 0 1.2px 1.3px -0.8px,
-    rgb(0 0 0 / 7%) 0 2.9px 3.3px -1.7px,
-    rgb(0 0 0 / 7%) 0.1px 6.9px 7.8px -2.5px,
-    rgb(0 0 0 / 10%) 0 0 7.8px -2.5px;
-  --shadow-2:
-    rgb(0 0 0 / 5%) 0 0.4px 0.5px 0,
-    rgb(0 0 0 / 5%) 0 1.8px 2px -0.4px,
-    rgb(0 0 0 / 5%) 0 3.3px 3.7px -0.7px,
-    rgb(0 0 0 / 5%) 0.1px 5.3px 6px -1.1px,
-    rgb(0 0 0 / 5%) 0.1px 8.4px 9.5px -1.4px,
-    rgb(0 0 0 / 5%) 0.1px 13.1px 14.7px -1.8px,
-    rgb(0 0 0 / 5%) 0.2px 19.9px 22.4px -2.1px,
-    rgb(0 0 0 / 5%) 0.3px 29.3px 33px -2.5px,
-    rgb(0 0 0 / 7.5%) 0 0 9.5px -1.4px;
-}
+@import "./theme/colors";
+@import "./theme/tokens";
+@import "./theme/tridactyl";
 
 .TridactylOwnNamespace > body {
   display: flex;
@@ -77,7 +16,7 @@
   flex-direction: row;
   align-items: center;
   order: 1;
-  background: var(--background00);
+  background: var(--background-0);
   border-radius: 0;
   border-top-left-radius: var(--border-radius-3);
   border-top-right-radius: var(--border-radius-3);
@@ -88,7 +27,7 @@
 
 #command-line-holder #tridactyl-colon {
   padding-left: 0.75rem;
-  color: var(--foreground1);
+  color: var(--foreground-1);
   font-size: 1.25rem;
   opacity: 0.5;
 }
@@ -142,12 +81,13 @@
   font-size: unset;
   font-weight: 200;
   opacity: 0.95;
+
+  & .optionContainer {
+    padding-top: 0;
+  }
 }
 
-#completions .optionContainer {
-  padding-top: 0;
-}
-
+#completions
 /* Olie doesn't know how CSS inheritance works */
 #completions .HistoryCompletionSource {
   min-height: unset;
@@ -196,7 +136,7 @@
   padding-bottom: 0.2rem;
   padding-left: unset;
   border-bottom: unset;
-  background: var(--background0);
+  background: var(--background-1);
   font-weight: 200;
 }
 
@@ -246,11 +186,11 @@
 }
 
 #completions .focused {
-  background: var(--background3);
-  color: var(--foreground3);
+  background: var(--background-4);
+  color: var(--foreground-3);
 }
 
 #completions .focused .url {
   background: var(--green);
-  color: var(--background1);
+  color: var(--background-2);
 }

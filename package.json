@@ -8,16 +8,25 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "sass --load-path ./node_modules --source-map scss/:css/",
+    "clean": "rimraf css",
     "fix": "yarn fix:format && yarn fix:lint",
     "fix:format": "yarn format",
     "fix:lint": "yarn lint --fix",
-    "format": "prettier --write *.css",
-    "lint": "stylelint *.css"
+    "format": "prettier --write scss/**/*.scss",
+    "lint": "stylelint scss/**/*.scss",
+    "start": "nodemon --watch scss -e scss --exec 'yarn build'"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.50.1",
     "stylelint": "^14.7.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-standard": "^25.0.0"
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "resolutions": {
+    "postcss": "^8.4.12"
   }
 }

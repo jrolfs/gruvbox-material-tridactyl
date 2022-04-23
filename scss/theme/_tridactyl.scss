@@ -1,0 +1,22 @@
+:root {
+  --tridactyl-cmdl-font-family: "MonoLisa";
+
+  // Color
+  --tridactyl-fg: var(--foreground-2);
+  --tridactyl-bg: var(--background-2);
+  --tridactyl-url-fg: var(--red);
+  --tridactyl-url-bg: var(--background-2);
+  --tridactyl-highlight-box-bg: var(--green);
+  --tridactyl-highlight-box-fg: var(--background-2);
+
+  // Hints
+  --tridactyl-hintspan-fg: var(--background-2) !important;
+  --tridactyl-hintspan-bg: var(--yellow) !important;
+
+  // Hint Elements
+  --tridactyl-hint-active-fg: none;
+  --tridactyl-hint-active-bg: none;
+  --tridactyl-hint-active-outline: none;
+  --tridactyl-hint-bg: none;
+  --tridactyl-hint-outline: none;
+}

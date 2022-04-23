@@ -1,0 +1,29 @@
+:root {
+  // Border
+  --border-radius-1: 4px;
+  --border-radius-2: 6px;
+  --border-radius-3: 8px;
+
+  // Space
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+
+  // Shadow
+  --shadow-1:
+    rgb(0 0 0 / 7%) 0 0.4px 0.5px 0,
+    rgb(0 0 0 / 7%) 0 1.2px 1.3px -0.8px,
+    rgb(0 0 0 / 7%) 0 2.9px 3.3px -1.7px,
+    rgb(0 0 0 / 7%) 0.1px 6.9px 7.8px -2.5px,
+    rgb(0 0 0 / 10%) 0 0 7.8px -2.5px;
+  --shadow-2:
+    rgb(0 0 0 / 5%) 0 0.4px 0.5px 0,
+    rgb(0 0 0 / 5%) 0 1.8px 2px -0.4px,
+    rgb(0 0 0 / 5%) 0 3.3px 3.7px -0.7px,
+    rgb(0 0 0 / 5%) 0.1px 5.3px 6px -1.1px,
+    rgb(0 0 0 / 5%) 0.1px 8.4px 9.5px -1.4px,
+    rgb(0 0 0 / 5%) 0.1px 13.1px 14.7px -1.8px,
+    rgb(0 0 0 / 5%) 0.2px 19.9px 22.4px -2.1px,
+    rgb(0 0 0 / 5%) 0.3px 29.3px 33px -2.5px,
+    rgb(0 0 0 / 7.5%) 0 0 9.5px -1.4px;
+}
