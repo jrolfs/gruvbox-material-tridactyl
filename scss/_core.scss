@@ -1,6 +1,10 @@
+// Theme
 @import "./theme/colors";
 @import "./theme/tokens";
 @import "./theme/tridactyl";
+
+// New Tab
+@import "./new";
 
 .TridactylOwnNamespace > body {
   display: flex;

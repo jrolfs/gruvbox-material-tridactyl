@@ -1,0 +1,9 @@
+#trinewtab {
+  & > img {
+    display: none;
+  }
+
+  a {
+    color: var(--blue);
+  }
+}
