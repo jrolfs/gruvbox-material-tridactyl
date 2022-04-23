@@ -63,7 +63,7 @@
     rgb(0 0 0 / 7.5%) 0 0 9.5px -1.4px;
 }
 
-body {
+.TridactylOwnNamespace > body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
