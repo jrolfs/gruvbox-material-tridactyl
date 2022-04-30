@@ -1,12 +1,15 @@
+@import "./selectors";
+
 // Theme
 @import "./theme/colors";
 @import "./theme/tokens";
 @import "./theme/tridactyl";
 
-// New Tab
+// Chrome
+@import "./status";
 @import "./new";
 
-.TridactylOwnNamespace > body {
+#{$frame-root} > body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
