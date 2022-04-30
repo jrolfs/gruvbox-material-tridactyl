@@ -26,4 +26,35 @@
     rgb(0 0 0 / 15%) 0.2px 19.9px 22.4px -2.1px,
     rgb(0 0 0 / 15%) 0.3px 29.3px 33px -2.5px,
     rgb(0 0 0 / 17.5%) 0 0 9.5px -1.4px;
+
+  // Typography
+  --font-family-sans:
+    -apple-system,
+    blinkmacsystemfont,
+    "Open Sans",
+    "Helvetica Neue",
+    "Segoe UI",
+    roboto,
+    oxygen,
+    ubuntu,
+    cantarell,
+    sans-serif;
+  --font-family-mono:
+    "Mono Lisa",
+    sfmono-regular,
+    "Source Code Pro",
+    menlo,
+    monaco,
+    consolas,
+    "Liberation Mono",
+    monospace;
+  --font-size-1: 10px;
+  --font-size-2: 16px;
+  --font-size-3: 20px;
+  --font-weight-mono-normal: 400;
+  --font-weight-sans-normal: 400;
+  --font-weight-mono-semibold: 500;
+  --font-weight-sans-semibold: 500;
+  --font-weight-mono-bold: 600;
+  --font-weight-sans-bold: 600;
 }

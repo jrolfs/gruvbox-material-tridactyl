@@ -1,13 +1,19 @@
 :root {
-  --tridactyl-cmdl-font-family: "MonoLisa";
+  // Typography
+  --tridactyl-cmdl-font-size: var(--font-size-3);
+  --tridactyl-header-font-size: var(--font-size-2);
+  --tridactyl-cmdl-font-family: var(--font-family-mono);
+  --tridactyl-cmplt-font-family: var(--font-family-mono);
+  --tridactyl-header-font-weight: var(--font-weight-mono-semibold);
 
   // Color
   --tridactyl-fg: var(--foreground-2);
   --tridactyl-bg: var(--background-2);
-  --tridactyl-url-fg: var(--red);
+  --tridactyl-url-fg: var(--blue);
   --tridactyl-url-bg: var(--background-2);
   --tridactyl-highlight-box-bg: var(--green);
   --tridactyl-highlight-box-fg: var(--background-2);
+  --tridactyl-photon-colours-accent-1: var(--blue);
 
   // Hints
   --tridactyl-hintspan-fg: var(--background-2) !important;

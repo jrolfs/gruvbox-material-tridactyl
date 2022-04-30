@@ -1,0 +1,15 @@
+.TridactylStatusIndicator {
+  position: fixed !important;
+  right: 5px !important;
+  bottom: 0 !important;
+  bottom: 5px !important;
+  padding: 0.25rem 0.375rem !important;
+  border: unset !important;
+  background: var(--tridactyl-bg) !important;
+  border-radius: var(--border-radius-1) !important;
+  box-shadow: var(--shadow-1) !important;
+  color: var(--yellow) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  opacity: 0.75;
+}

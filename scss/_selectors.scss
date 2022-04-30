@@ -1,5 +1,18 @@
-// `html` element in Tridactyl iframe
-$frame-root: ".TridactylOwnNamespace";
+@use "sass:map";
 
-// Command
-$command: "#command-line-holder";
+// Tridactyl iframe
+$frame: "#cmdline_iframe";
+$frame-root: ".TridactylOwnNamespace"; // `html` element in iframe
+
+// Completion
+$completion-table: ".optionContainer";
+
+// Sources
+$sources: (
+  "bookmark": ".BmarkCompletionSource",
+  "buffer": ".BufferCompletionSource",
+  "history": ".HistoryCompletionSource",
+);
+$source-bookmark: map.get($sources, "bookmark");
+$source-buffer: map.get($sources, "buffer");
+$source-history: map.get($sources, "history");
