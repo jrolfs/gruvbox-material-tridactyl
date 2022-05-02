@@ -142,6 +142,22 @@
     }
   }
 
+  // Focus
+
+  .focused {
+    background: var(--background-4);
+    color: var(--foreground-3);
+
+    .excmd {
+      color: var(--magenta);
+    }
+
+    .url {
+      background: var(--background-4);
+      color: var(--magenta);
+    }
+  }
+
   // Sources
 
   @each $source, $selector in $sources {
@@ -161,18 +177,4 @@
   #{$source-history} {
     td.prefix { display: none; }
   }
-}
-
-#completions .focused .excmd {
-  color: var(--magenta);
-}
-
-#completions .focused {
-  background: var(--background-4);
-  color: var(--foreground-3);
-}
-
-#completions .focused .url {
-  background: var(--green);
-  color: var(--background-2);
 }
