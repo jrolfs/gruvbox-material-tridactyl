@@ -6,7 +6,9 @@
   
 </div>
 
-<img src="https://user-images.githubusercontent.com/288160/164817704-e34faff9-4538-48e0-a59f-0200ed61a3c6.png" alt="Dark Soft Screenshot">
+<img src="https://user-images.githubusercontent.com/288160/166327179-2d24507e-7046-4c38-8c90-200333e7c2b1.png" alt="Commands Screenshot">
+<img src="https://user-images.githubusercontent.com/288160/166327172-66f576e1-0025-4c10-aa2d-8055e4aeaf19.png" alt="Buffers Screenshot">
+
 
 ¹This is a work in progress — 🚧 — so far only the **Dark Soft** variant has been implemented.
 
