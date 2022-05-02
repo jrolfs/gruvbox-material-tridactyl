@@ -1,5 +1,6 @@
 :root {
   // Border
+  --border-radius-0: 3px;
   --border-radius-1: 4px;
   --border-radius-2: 6px;
   --border-radius-3: 8px;
@@ -10,6 +11,13 @@
   --space-3: 12px;
 
   // Shadow
+  --shadow-0:
+    0 0.1px 0.1px 0 rgb(0 0 0 / 35%),
+    0 0.4px 0.5px -0.7px rgb(0 0 0 / 35%),
+    0 1.1px 1.2px -1.5px rgb(0 0 0 / 25%),
+    0 2.7px 3.2px -2px rgb(0 0 0 / 35%),
+    0 -0.1px 1.2px 0 rgb(0 0 0 / 20%),
+    0 0 3.5px -2.2px rgb(0 0 0 / 30%);
   --shadow-1:
     rgb(0 0 0 / 7%) 0 0.4px 0.5px 0,
     rgb(0 0 0 / 7%) 0 1.2px 1.3px -0.8px,
