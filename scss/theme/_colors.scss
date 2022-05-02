@@ -1,41 +1,40 @@
 /* stylelint-disable declaration-colon-space-after, scss/dollar-variable-colon-space-after */
 
-$background-0: #1d2021 !default;
-$background-1: #282828 !default;
-$background-2: #32302f !default;
-$background-3: #3c3836 !default;
-$background-4: #504945 !default;
-$background-5: #665c54 !default;
-$foreground-0: #665c54 !default;
-$foreground-1: #bdae93 !default;
-$foreground-2: #d5c4a1 !default;
-$foreground-3: #ebdbb2 !default;
-$foreground-4: #fbf1c7 !default;
-$red:          #ea6962 !default;
-$orange:       #e78a4e !default;
-$yellow:       #d8a657 !default;
-$green:        #a9b665 !default;
-$cyan:         #89b482 !default;
-$blue:         #7daea3 !default;
-$magenta:      #d3869b !default;
+$background: (
+  0: #1d2021,
+  1: #282828,
+  2: #32302f,
+  3: #3c3836,
+  4: #504945,
+  5: #665c54,
+) !default;
+$foreground: (
+  0: #665c54,
+  1: #bdae93,
+  2: #d5c4a1,
+  3: #ebdbb2,
+  4: #fbf1c7,
+) !default;
+$color: (
+  "red": #ea6962,
+  "orange": #e78a4e,
+  "yellow": #d8a657,
+  "green": #a9b665,
+  "cyan": #89b482,
+  "blue": #7daea3,
+  "magenta": #d3869b,
+) !default;
 
 :root {
-  --background-0: #{$background-0};
-  --background-1: #{$background-1};
-  --background-2: #{$background-2};
-  --background-3: #{$background-3};
-  --background-4: #{$background-4};
-  --background-5: #{$background-5};
-  --foreground-0: #{$foreground-0};
-  --foreground-1: #{$foreground-1};
-  --foreground-2: #{$foreground-2};
-  --foreground-3: #{$foreground-3};
-  --foreground-4: #{$foreground-4};
-  --red:          #{$red};
-  --orange:       #{$orange};
-  --yellow:       #{$yellow};
-  --green:        #{$green};
-  --cyan:         #{$cyan};
-  --blue:         #{$blue};
-  --magenta:      #{$magenta};
+  @each $i, $value in $background {
+    --background-#{$i}: #{$value};
+  }
+
+  @each $i, $value in $foreground {
+    --foreground-#{$i}: #{$value};
+  }
+
+  @each $c, $value in $color {
+    --#{$c}: #{$value};
+  }
 }
