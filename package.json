@@ -1,6 +1,6 @@
 {
   "name": "gruvbox-material-tridactyl",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Gruvbox Material for Tridactyl",
   "main": "index.js",
   "repository": "git@github.com:jrolfs/gruvbox-material-tridactyl.git",
