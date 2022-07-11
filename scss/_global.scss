@@ -1,11 +1,5 @@
 @import "./selectors";
 
-#{$frame-root} {
-  a {
-    color: red !important;
-  }
-}
-
 .hljs-keyword {
   color: var(--blue);
 }
