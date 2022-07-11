@@ -18,7 +18,7 @@
 ### Installation
 
 ```vim
-:colourscheme --url https://github.com/jrolfs/gruvbox-material-tridactyl/releases/download/v0.1.0/dark-soft.css gruvbox-material-dark-soft
+:colourscheme --url https://github.com/jrolfs/gruvbox-material-tridactyl/releases/download/v0.1.1/dark-soft.css gruvbox-material-dark-soft
 ```
 #### Credits
 
