@@ -1,28 +1,28 @@
 /* stylelint-disable declaration-colon-space-after, scss/dollar-variable-colon-space-after */
 
 $background: (
-  0: #1d2021,
-  1: #282828,
-  2: #32302f,
-  3: #3c3836,
-  4: #504945,
-  5: #665c54,
+  0: $background-0,
+  1: $background-1,
+  2: $background-2,
+  3: $background-3,
+  4: $background-4,
+  5: $background-5,
 ) !default;
 $foreground: (
-  0: #665c54,
-  1: #bdae93,
-  2: #d5c4a1,
-  3: #ebdbb2,
-  4: #fbf1c7,
+  0: $foreground-0,
+  1: $foreground-1,
+  2: $foreground-2,
+  3: $foreground-3,
+  4: $foreground-4,
 ) !default;
 $color: (
-  "red": #ea6962,
-  "orange": #e78a4e,
-  "yellow": #d8a657,
-  "green": #a9b665,
-  "cyan": #89b482,
-  "blue": #7daea3,
-  "magenta": #d3869b,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "cyan": $cyan,
+  "blue": $blue,
+  "magenta": $magenta,
 ) !default;
 
 :root {
