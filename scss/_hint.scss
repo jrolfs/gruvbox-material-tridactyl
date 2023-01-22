@@ -24,6 +24,14 @@ span.TridactylHint {
   border-radius: 5px;
   outline: 1px dotted var(--foreground-4) !important;
 
+  @media (prefers-color-scheme: dark) {
+    outline-color: var(--foreground-4);
+  }
+
+  @media (prefers-color-scheme: light) {
+    outline-color: var(--background-2);
+  }
+
   &:hover {
     outline-offset: 0;
   }
