@@ -21,7 +21,10 @@ span.TridactylHint {
 }
 
 .TridactylHintElem {
-  border: none;
   border-radius: 5px;
   outline: 1px dotted var(--foreground-4) !important;
+
+  &:hover {
+    outline-offset: 0;
+  }
 }
