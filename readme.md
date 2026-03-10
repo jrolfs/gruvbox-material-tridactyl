@@ -21,6 +21,16 @@
 ```vim
 :colourscheme --url https://github.com/jrolfs/gruvbox-material-tridactyl/releases/download/v0.1.1/dark-soft.css gruvbox-material-dark-soft
 ```
+
+#### Fix Hints
+
+Either run these commands from the Tridactyl command line or add them to your **`.tridactylrc`**. See **https://github.com/jrolfs/gruvbox-material-tridactyl/issues/6#issuecomment-3591906336** for details.
+
+```vim
+set hintstyles.fg none
+set hintstyles.bg none
+```
+
 #### Credits
 
 This was originally based off of [base16-tridactyl](https://github.com/bezmi/base16-tridactyl), 🙏🏻 thanks **[@bezmi](https://github.com/bezmi)**
